@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --title-font-size: 3rem;
+  --category-title-font-size: 1.8rem;
+  --button-category-font-size: 1.6rem;
+  --wolof-phrase-font-size: 2rem;
+  --english-phrase-font-size: 1.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --title-font-size: 3.5rem;
+    --category-title-font-size: 2.2rem;
+    --button-category-font-size: 2rem;
+    --wolof-phrase-font-size: 2.5rem;
+    --english-phrase-font-size: 1.5rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1.5rem .5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 2%, 18%);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  margin-bottom: 1rem;
+  color: hsl(0, 53%, 54%);
+  text-align: center;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+  font-size: var(--category-title-font-size);
+}
+
+.category-title h2 {
+  margin-right: .5rem;
+}
+
+.category-button {
+  border: none;
+  background-color: transparent;
+  font-size: var(--button-category-font-size);
+  margin-left: 1rem;
+}
+
+.section {
+  background-color: hsl(0, 0%, 96%);
+  margin: .5rem 0;
+  padding: .5rem 1.2rem;
+  border-radius: 5px;
+}
+
+.phrase {
+  padding: 0.4rem 0;
+}
+
+.wolof-phrase {
+  font-size: var(--wolof-phrase-font-size);
+  color: hsl(120, 100%, 25%);
+}
+
+.english-phrase {
+  font-size: var(--english-phrase-font-size);
+}
