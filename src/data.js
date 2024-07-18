@@ -3,44 +3,74 @@ export const data = [
   {
     id: "greeting1",
     wolof: "Nuyu naala",
-    english: "Hello",
-    category: "greetings",
+    english: "Hello / Greetings",
+    category: "greetings & farwells",
   },
   {
     id: "greeting2",
-    wolof: "As-salamu alaykum / Wa-Alaikum-Salaam",
-    english: "Peace be unto you / And unto you peace",
-    category: "greetings",
+    wolof: "Asalaa maalekum",
+    english: "Peace be upon you",
+    category: "greetings & farwells",
+  },
+  {
+    id: "greeting2",
+    wolof: "{In response to above} Maalekum salaam",
+    english: "Peace be upon you",
+    category: "greetings & farwells",
   },
   {
     id: "greeting3",
-    wolof: "Nanga def? / Maangi fii, jarajëf",
-    english: "How are you? / Fine, thanks",
-    category: "greetings",
+    wolof: "Nanga def?",
+    english: "How are you?",
+    category: "greetings & farwells",
+  },
+  {
+    id: "greeting",
+    wolof: "Naka moo",
+    english: "What's up?",
+    category: "greetings & farwells"
+  },
+  {
+    id: "greeting3",
+    wolof: "Maangi fii, jarajëf / Jámm rekk",
+    english: "Fine, thanks / Peace only",
+    category: "greetings & farwells",
   },
   {
     id: "greeting4",
-    wolof: "Suba ak jàmm",
-    english: "Good morning",
-    category: "greetings",
+    wolof: "Naka waa kër gi?",
+    english: "How is the family?",
+    category: "greetings & farwells",
   },
   {
     id: "greeting5",
-    wolof: "Ngoonu jàmm",
-    english: "Good afternoon",
-    category: "greetings",
+    wolof: "Ñungi fi",
+    english: "They are fine",
+    category: "greetings & farwells",
+  },
+  {
+    id: "greeting6",
+    wolof: "Naka suba si?",
+    english: "How is the morning?",
+    category: "greetings & farwells",
   },
   {
     id: "greeting6",
     wolof: "Guddig jàmm",
     english: "Good evening",
-    category: "greetings",
+    category: "greetings & farwells",
   },
   {
     id: "greeting7",
     wolof: "Ñu fanaan ci jàmm ",
     english: "Good night",
-    category: "greetings",
+    category: "greetings & farwells",
+  },
+  {
+    id: "greeting7",
+    wolof: "Ba beneen yóon",
+    english: "Goodbye / See you next time",
+    category: "greetings & farwells",
   },
   // INTRODUCTIONS
   {
@@ -51,14 +81,20 @@ export const data = [
   },
   {
     id: "intro2",
-    wolof: "Amy laa tuddu",
-    english: "My name is Amy",
+    wolof: "Amy laa tuddu, yow nag?",
+    english: "My name is Amy, what's yours?",
     category: "introductions",
   },
   {
-    id: "intro3",
-    wolof: "Mbegte la dajeek yaw",
-    english: "It's a pleasure to meet you",
+    id: "intro2",
+    wolof: "Noo sant? / Nanga sant? / Naka nga sant?",
+    english: "What is your last name?",
+    category: "introductions",
+  },
+  {
+    id: "intro2",
+    wolof: "Lopez laa sant",
+    english: "My last name is Lopez",
     category: "introductions",
   },
   {
@@ -69,20 +105,32 @@ export const data = [
   },
   {
     id: "intro5",
-    wolof: "Ñaari fukk ak juróom ñent at laa am",
-    english: "I'm 29",
+    wolof: "Fanweer at laa am",
+    english: "I'm 30",
     category: "introductions",
   },
   {
     id: "intro6",
-    wolof: "Fo joge?",
-    english: "Where are you from?",
+    wolof: "Fo jòge?",
+    english: "Where do you come from?",
     category: "introductions",
   },
   {
     id: "intro7",
-    wolof: "Reew-YuBennoo laa dëkk",
-    english: "I'm from the USA",
+    wolof: "United States laa dëkk",
+    english: "I'm from the United States",
+    category: "introductions",
+  },
+  {
+    id: "intro7",
+    wolof: "Foo dëkk",
+    english: "Where do you live?",
+    category: "introductions",
+  },
+  {
+    id: "intro7",
+    wolof: "London laa dëkk",
+    english: "I live in London",
     category: "introductions",
   },
   // ESSENTIAL WORDS
@@ -107,7 +155,7 @@ export const data = [
   {
     id: "essentialword4",
     wolof: "Baal ma",
-    english: "Sorry",
+    english: "Sorry / Excuse me",
     category: "essential words",
   },
   {
@@ -126,7 +174,7 @@ export const data = [
     id: "essentialword7",
     wolof: "Xaaral",
     english: "Wait",
-    category: "essential words"
+    category: "essential words",
   },
   // BASIC PHRASES
   {
@@ -203,12 +251,48 @@ export const data = [
     category: "basic questions",
   },
   {
+    id: "basicquestion5",
+    wolof: "Naka",
+    english: "How?",
+    category: "basic questions",
+  },
+  {
+    id: "basicquestion5",
+    wolof: "Ñaata",
+    english: "How many?",
+    category: "basic questions",
+  },
+  {
+    id: "basicquestion4",
+    wolof: "Ndax?",
+    english: "Is it that?",
+    category: "basic questions",
+  },
+  {
+    id: "basicquestion4",
+    wolof: "Ban?",
+    english: "Which?",
+    category: "basic questions",
+  },
+  {
     id: "basicquestion6",
     wolof: "Ban waxtu moo jot?",
     english: "What time is it?",
     category: "basic questions",
   },
   // COMPREHENSION
+  {
+    id: "comprehension4",
+    wolof: "Dégguma Wolof bu baax",
+    english: "I don't speak much Wolof",
+    category: "comprehension",
+  },
+  {
+    id: "comprehension4",
+    wolof: "Maangiy jang Wolof ndank-ndank",
+    english: "I'm learning Wolof small-small",
+    category: "comprehension",
+  },
   {
     id: "comprehension1",
     wolof: "Xawma li nga bëgg wax",
@@ -225,12 +309,6 @@ export const data = [
     id: "comprehension3",
     wolof: "Waxal ndank",
     english: "Please speak more slowly",
-    category: "comprehension",
-  },
-  {
-    id: "comprehension4",
-    wolof: "Deggouma bou bakh Wolof ",
-    english: "I speak a little Wolof",
     category: "comprehension",
   },
   {
@@ -265,12 +343,6 @@ export const data = [
     category: "shopping",
   },
   // FOOD/DRINK
-  {
-    id: "food1",
-    wolof: "Kafe laa bëgg, nga baalma",
-    english: "I'd like a coffee, please",
-    category: "food/drink",
-  },
   {
     id: "food2",
     wolof: "Loo bëgg naan",
