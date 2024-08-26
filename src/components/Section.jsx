@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { data } from "../data.js";
 import { getEmoji } from "./GetEmoji.js";
+import { Phrase } from "./Phrase.jsx";
 import { HiOutlinePlusCircle, HiOutlineMinusCircle } from "react-icons/hi2";
 
 // eslint-disable-next-line react/prop-types
@@ -26,14 +27,8 @@ export const Section = ({ category }) => {
       {show
         ? data
             .filter((item) => item.category === category)
-            .map((item) => {
-              const { id, english, wolof } = item;
-              return (
-                <div key={id} className="phrase">
-                  <h3 className="wolof-phrase">{wolof}</h3>
-                  <h3 className="english-phrase">{english}</h3>
-                </div>
-              );
+            .map((item, index) => {
+              return <Phrase key={`${item.category}${index}`} {...item} />;
             })
         : ""}
     </div>
