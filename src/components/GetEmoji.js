@@ -1,6 +1,9 @@
 export const getEmoji = (category) => {
-    if (category == "greetings & farwells") {
+    if (category == "greetings") {
       return "👋";
+    }
+    if (category === "goodbyes") {
+      return "✌️"
     }
     if (category == "introductions") {
       return "🤝";
