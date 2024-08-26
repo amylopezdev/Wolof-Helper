@@ -1,20 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root {
-  --title-font-size: 3rem;
-  --category-title-font-size: 1.8rem;
+  --title-font-size: 2.5rem;
+  --category-title-font-size: 1.5rem;
   --button-category-font-size: 1.6rem;
-  --wolof-phrase-font-size: 2rem;
-  --english-phrase-font-size: 1.4rem;
+  --wolof-phrase-font-size: 1.5rem;
+  --english-phrase-font-size: 1.3rem;
+  --green: hsl(120, 100%, 25%);
+  --background-color: hsl(0, 0%, 99%);
+  --text-color: hsl(0, 0%, 15%);
+  --phrase-even-background-color: hsl(0, 0%, 98%);
+  --phrase-odd-background-color: hsl(0, 0%, 95%);
 }
 
 @media screen and (min-width: 800px) {
   :root {
     --title-font-size: 3.5rem;
-    --category-title-font-size: 2.2rem;
-    --button-category-font-size: 2rem;
-    --wolof-phrase-font-size: 2.5rem;
-    --english-phrase-font-size: 1.5rem;
+    --category-title-font-size: 1.8rem;
+    --button-category-font-size: 1.8rem;
+    --wolof-phrase-font-size: 1.8rem;
+    --english-phrase-font-size: 1.6rem;
   }
 }
 
@@ -25,37 +30,54 @@
 }
 
 body {
-  padding: 1.5rem .5rem;
+  padding: 1.7rem 0.75rem;
   max-width: 900px;
   margin: 0 auto;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 2%, 18%);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
   letter-spacing: 1px;
+}
+
+.error {
+  color: hsl(0, 90%, 49%);
 }
 
 .title {
   font-size: var(--title-font-size);
-  margin-bottom: 1rem;
-  color: hsl(0, 53%, 54%);
+  margin-bottom: 1.2rem;
   text-align: center;
 }
 
+.section {
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+
 .category {
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   cursor: pointer;
+  background-color: hsl(127, 59%, 22%);
+  color: white;
 }
 
 .category-title {
+  font-size: var(--category-title-font-size);
   display: flex;
   align-items: center;
-  font-size: var(--category-title-font-size);
+}
+
+.category-title,
+.category-button {
+  padding: 0.75rem;
 }
 
 .category-title h2 {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .category-button {
@@ -65,22 +87,41 @@ body {
   margin-left: 1rem;
 }
 
-.section {
-  background-color: hsl(0, 0%, 96%);
-  margin: .5rem 0;
-  padding: .5rem 1.2rem;
+.phrase {
+  padding: 0.75rem 1rem;
   border-radius: 5px;
+  margin: .5rem 0;
 }
 
-.phrase {
-  padding: 0.4rem 0;
+.phrase:nth-of-type(odd) {
+  background-color: var(--phrase-odd-background-color);
+}
+
+.phrase:nth-of-type(even) {
+  background-color: var(--phrase-even-background-color);
+}
+
+.category-name {
+  color: hsl(0, 0%, 45%);
+  font-size: 1rem;
 }
 
 .wolof-phrase {
   font-size: var(--wolof-phrase-font-size);
-  color: hsl(120, 100%, 25%);
+  color: var(--green);
 }
 
 .english-phrase {
   font-size: var(--english-phrase-font-size);
+}
+
+.search-input {
+  border: solid 1.5px var(--text-color);
+  border-radius: 100px;
+  padding: 1rem;
+  height: 60px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
