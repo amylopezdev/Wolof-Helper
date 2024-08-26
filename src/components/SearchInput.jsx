@@ -1,4 +1,4 @@
-export const SearchInput = ({ handleChange }) => {
+export const SearchInput = ({ handleChange, searchField }) => {
   return (
     <input
       type="search"
@@ -7,6 +7,7 @@ export const SearchInput = ({ handleChange }) => {
       className="search-input"
       onChange={handleChange}
       placeholder="Search 🔎"
+      value={searchField}
     />
   );
 };

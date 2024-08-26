@@ -20,14 +20,16 @@ export const Search = () => {
     );
   });
 
+  const clearButton = <button onClick={()=>{setSearchField("")}}>Clear Search</button>;
+
   return (
     <>
-      <SearchInput handleChange={handleChange} />
+      <SearchInput handleChange={handleChange} searchField={searchField}/>
 
       {filteredData.length < 1 && searchField !== "" ? (
-        <div className="error">No results found</div>
+        <div className="results error">No results found {clearButton}</div>
       ) : filteredData.length > 1 ? (
-        <div>{filteredData.length} results found</div>
+        <div className="results">{filteredData.length} results found {clearButton}</div>
       ) : (
         <></>
       )}
