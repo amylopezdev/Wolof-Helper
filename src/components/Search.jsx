@@ -28,8 +28,8 @@ export const Search = () => {
 
       {filteredData.length < 1 && searchField !== "" ? (
         <div className="results error">No results found {clearButton}</div>
-      ) : filteredData.length > 1 ? (
-        <div className="results">{filteredData.length} results found {clearButton}</div>
+      ) : filteredData.length >= 1 ? (
+        <div className="results">{filteredData.length} result{filteredData.length > 1 ? "s" : ""} found {clearButton}</div>
       ) : (
         <></>
       )}
