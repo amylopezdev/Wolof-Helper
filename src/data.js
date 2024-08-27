@@ -45,6 +45,7 @@ export const data = [
     wolof: "Naka moo",
     english: "What's up?",
     category: "greetings",
+    informal: true
   },
   {
     wolof: "Naka liggéy bi?",
