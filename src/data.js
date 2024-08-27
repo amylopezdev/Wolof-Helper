@@ -1,7 +1,7 @@
 export const data = [
   // GREETINGS
   {
-    wolof: "Asalaa maalekum / Maalekum salaam",
+    wolof: "Salaa maalekum / Maalekum salaam",
     english: "Peace be upon you / And unto you peace",
     category: "greetings",
   },
@@ -16,13 +16,24 @@ export const data = [
     category: "greetings",
   },
   {
+    wolof: "Maangi fii",
+    english: "I'm here / I'm doing well",
+    category: "greetings",
+  },
+  {
+    wolof: "Maangi fii rekk",
+    english: "I'm here only / I'm doing well",
+    category: "greetings",
+    informal: true
+  },
+  {
     wolof: "Maa ngi ci jámm",
     english: "I'm in peace / I'm doing well",
     category: "greetings",
   },
   {
-    wolof: "Maangi fii",
-    english: "I'm here / I'm doing well",
+    wolof: "Jámm rekk",
+    english: "Peace only",
     category: "greetings",
   },
   {
@@ -60,30 +71,20 @@ export const data = [
     english: "How did you spend the night / day?",
     category: "greetings",
   },
-  {
-    wolof: "Jámm rekk",
-    english: "Peace only",
-    category: "greetings",
-  },
-  {
-    wolof: "Guddig jàmm",
-    english: "Good evening",
-    category: "greetings",
-  },
-  {
-    wolof: "Ñu fanaan ci jàmm ",
-    english: "Good night",
-    category: "greetings",
-  },
   // GOODBYES
   {
     wolof: "Ba beneen yóon",
-    english: "Goodbye / See you next time",
+    english: "See you next time / Goodbye",
     category: "goodbyes",
   },
   {
     wolof: "Ba suba",
     english: "See you tomorrow",
+    category: "goodbyes",
+  },
+  {
+    wolof: "Ñu fanaan ci jàmm",
+    english: "Good evening / night",
     category: "goodbyes",
   },
   // INTRODUCTIONS
