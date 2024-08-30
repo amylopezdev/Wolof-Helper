@@ -1,61 +1,68 @@
 export const data = [
   // GREETINGS
   {
-    wolof: "Salaa maalekum / Maalekum salaam",
-    english: "Peace be upon you / And unto you peace",
+    wolof: "Salaa maalekum",
+    english: "Peace be upon you",
     category: "greetings",
+    responses: [
+      {
+        wolof: "Maalekum salaam",
+        english: "And unto you peace",
+      },
+    ],
   },
   {
     wolof: "Nanga def?",
     english: "How are you?",
     category: "greetings",
+    responses: [
+      {
+        wolof: "Maangi fii",
+        english: "I'm here / I'm doing well",
+      },
+      {
+        wolof: "Maangi fii rekk",
+        english: "I'm here only / I'm doing well",
+        informal: true,
+      },
+      {
+        wolof: "Maa ngi ci jámm",
+        english: "I'm in peace / I'm doing well",
+      },
+    ],
   },
   {
-    wolof: "Nangeen def? / Nungi fii rekk",
-    english: "How are you all doing? / We are fine",
+    wolof: "Nangeen def?",
+    english: "How are you all doing?",
     category: "greetings",
+    responses: [
+      {
+        wolof: "Nungi fii rekk",
+        english: "We are fine",
+      },
+    ],
   },
+  // {
+  //   wolof: "Jámm rekk",
+  //   english: "Peace only",
+  //   category: "greetings",
+  // },
   {
-    wolof: "Maangi fii",
-    english: "I'm here / I'm doing well",
+    wolof: "Naka waa kër gi?",
+    english: "How is the family?",
     category: "greetings",
-  },
-  {
-    wolof: "Maangi fii rekk",
-    english: "I'm here only / I'm doing well",
-    category: "greetings",
-    informal: true
-  },
-  {
-    wolof: "Maa ngi ci jámm",
-    english: "I'm in peace / I'm doing well",
-    category: "greetings",
-  },
-  {
-    wolof: "Jámm rekk",
-    english: "Peace only",
-    category: "greetings",
-  },
-  {
-    wolof: "Naka waa kër gi? / Ñungi fi",
-    english: "How is the family? / They are fine",
-    category: "greetings",
-  },
-  {
-    wolof: "Naka moo",
-    english: "What's up?",
-    category: "greetings",
-    informal: true
+    responses: [{ wolof: "Ñungi fi", english: "They are fine" }],
   },
   {
     wolof: "Naka liggéy bi?",
     english: "How is the job?",
     category: "greetings",
-  },
-  {
-    wolof: "Mungi dox",
-    english: "It works (It's going well)",
-    category: "greetings",
+    responses: [
+      {
+        wolof: "Mungi dox",
+        english: "It works / It's going well",
+      },
+    ],
   },
   {
     wolof: "Naka suba si?",
@@ -71,6 +78,12 @@ export const data = [
     wolof: "Nanga fanaane / yendoo?",
     english: "How did you spend the night / day?",
     category: "greetings",
+  },
+  {
+    wolof: "Naka moo",
+    english: "What's up?",
+    category: "greetings",
+    informal: true,
   },
   // GOODBYES
   {
@@ -197,8 +210,8 @@ export const data = [
     category: "basic phrases",
   },
   {
-    wolof: "Baax na, jërëjëf / Déedéet jërëjëf",
-    english: "No thanks",
+    wolof: "Baax na, jërëjëf / Déedéet, jërëjëf",
+    english: "No, thanks",
     category: "basic phrases",
   },
   {

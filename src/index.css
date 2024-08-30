@@ -6,10 +6,12 @@
   --button-category-font-size: 1.6rem;
   --wolof-phrase-font-size: 1.5rem;
   --english-phrase-font-size: 1.3rem;
-  --green: hsl(120, 100%, 25%);
-  --background-color: hsl(0, 0%, 99%);
-  --text-color: hsl(0, 0%, 15%);
-  --phrase-even-background-color: hsl(0, 0%, 98%);
+  --wolof-green: hsl(120, 74%, 40%);
+  --category-green: hsl(120, 51%, 44%);
+  --formality: hsl(0, 0%, 45%);
+  --background-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 1%, 22%);
+  --phrase-even-background-color: hsl(0, 0%, 96%);
   --phrase-odd-background-color: hsl(0, 0%, 95%);
 }
 
@@ -20,6 +22,18 @@
     --button-category-font-size: 1.8rem;
     --wolof-phrase-font-size: 1.8rem;
     --english-phrase-font-size: 1.6rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: hsl(0, 9%, 11%);
+    --text-color: hsl(0, 0%, 100%);
+    --wolof-green: hsl(120, 50%, 46%);
+    --category-green: hsl(120, 58%, 26%);
+    --formality: hsl(0, 0%, 70%);
+    --phrase-even-background-color: hsl(0, 0%, 17%);
+    --phrase-odd-background-color: hsl(0, 0%, 21%);
   }
 }
 
@@ -62,6 +76,7 @@ body {
   align-items: flex-start;
   cursor: pointer;
   background-color: hsl(127, 59%, 22%);
+  background-color: var(--category-green);
   color: white;
 }
 
@@ -90,7 +105,7 @@ body {
 .phrase {
   padding: 0.75rem 1rem;
   border-radius: 5px;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .phrase:nth-of-type(odd) {
@@ -103,24 +118,34 @@ body {
 
 .category-name,
 .formality {
-  color: hsl(0, 0%, 45%);
+  color: var(--formality);
   font-size: 1rem;
 }
 
 .formality {
   font-style: italic;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .wolof-phrase {
   font-size: var(--wolof-phrase-font-size);
-  color: var(--green);
+  color: var(--wolof-green);
   display: flex;
   align-items: center;
 }
 
 .english-phrase {
   font-size: var(--english-phrase-font-size);
+}
+
+.responses-title {
+  margin: 1rem 0 .5rem;
+  font-size: var(--category-title-font-size);
+  color: var(--formality)
+}
+
+.response {
+  margin: .35rem 0;
 }
 
 .search-input {
@@ -141,10 +166,11 @@ body {
 }
 
 .results button {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   text-decoration: underline;
-  margin: .5rem 0 1rem;
+  margin: 0.5rem 0 1rem;
 }
