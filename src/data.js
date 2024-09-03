@@ -27,7 +27,7 @@ export const data = [
       },
       {
         wolof: "Maa ngi ci jámm",
-        english: "I'm in peace / I'm doing well",
+        english: "I have peace / I'm doing well",
       },
     ],
   },
@@ -80,6 +80,11 @@ export const data = [
     category: "greetings",
   },
   {
+    wolof: "Jàmm nga fanaane / yendoo?",
+    english: "Did you have a peaceful night / day?",
+    category: "greetings",
+  },
+  {
     wolof: "Naka moo",
     english: "What's up?",
     category: "greetings",
@@ -106,56 +111,57 @@ export const data = [
     wolof: "Noo tuddu?",
     english: "What's your name?",
     category: "introductions",
-  },
-  {
-    wolof: "Amy laa tuddu, yow nag?",
-    english: "My name is Amy, what's yours?",
-    category: "introductions",
+    responses: [
+      {
+        wolof: "Amy laa tuddu, yow nag?",
+        english: "My name is Amy, what's yours?",
+      },
+    ],
   },
   {
     wolof: "Noo sant? / Nanga sant? / Naka nga sant?",
     english: "What is your last name?",
     category: "introductions",
+    responses: [
+      {
+        wolof: "Lopez laa sant",
+        english: "My last name is Lopez",
+      },
+    ],
   },
   {
-    wolof: "Lopez laa sant",
-    english: "My last name is Lopez",
+    wolof: "Fan nga jóge?",
+    english: "Where do you come from?",
     category: "introductions",
+    responses: [
+      {
+        wolof: "United States laa dëkk",
+        english: "I'm from the United States",
+        category: "introductions",
+      },
+    ],
+  },
+  {
+    wolof: "Fan nga dëkk",
+    english: "Where do you live?",
+    category: "introductions",
+    responses: [
+      {
+        wolof: "London laa dëkk",
+        english: "I live in London",
+      },
+    ],
   },
   {
     wolof: "Ñaata at nga am?",
     english: "How old are you?",
     category: "introductions",
-  },
-  {
-    wolof: "Fanweer at laa am",
-    english: "I'm 30",
-    category: "introductions",
-  },
-  {
-    wolof: "Fo jòge?",
-    english: "Where do you come from?",
-    category: "introductions",
-  },
-  {
-    wolof: "United States laa dëkk",
-    english: "I'm from the United States",
-    category: "introductions",
-  },
-  {
-    wolof: "Americain nga? / Waaw, Americain laa",
-    english: "Are you American? / Yes, I'm American",
-    category: "introductions",
-  },
-  {
-    wolof: "Foo dëkk",
-    english: "Where do you live?",
-    category: "introductions",
-  },
-  {
-    wolof: "London laa dëkk",
-    english: "I live in London",
-    category: "introductions",
+    responses: [
+      {
+        wolof: "Fanweer at laa am",
+        english: "I'm 30",
+      },
+    ],
   },
   // ESSENTIAL WORDS
   {
@@ -181,6 +187,11 @@ export const data = [
   {
     wolof: "Léegi",
     english: "Soon",
+    category: "essential words",
+  },
+  {
+    wolof: "Xarit",
+    english: "Friend",
     category: "essential words",
   },
   {
@@ -311,15 +322,10 @@ export const data = [
     english: "Please speak more slowly",
     category: "comprehension",
   },
-  {
-    wolof: "Mahn deggouma Farnes",
-    english: "I don't speak French",
-    category: "comprehension",
-  },
   // SHOPPING
   {
-    wolof: "Bii ñaata lay jar?",
-    english: "How much does this cost?",
+    wolof: "Bii ñaata lay jar? / Ñaata lay jar?",
+    english: "How much does this cost? / How much does it cost?",
     category: "shopping",
   },
   {
@@ -335,6 +341,11 @@ export const data = [
   {
     wolof: "Tëjna",
     english: "Closed",
+    category: "shopping",
+  },
+  {
+    wolof: "Seer na lool",
+    english: "It's very expensive",
     category: "shopping",
   },
   // FOOD/DRINK
@@ -465,6 +476,32 @@ export const data = [
     english: "I'm lost",
     category: "directions",
   },
+    // ADJECTIVES
+    {
+      wolof: "Lopital",
+      english: "Hospital",
+      category: "health",
+    },
+    {
+      wolof: "Dama feebar",
+      english: "I'm sick",
+      category: "health",
+    },
+    {
+      wolof: "Sama yaram neexul",
+      english: "I don't feel well",
+      category: "health",
+    },
+    {
+      wolof: "Sama bopp dafay metti",
+      english: "My head hurts / I have a headache",
+      category: "health",
+    },
+    {
+      wolof: "Sama bopp dafay miir",
+      english: "My head feels dizzy - I feel dizzy",
+      category: "health",
+    },
   // NUMBERS
   {
     wolof: "Benn",
