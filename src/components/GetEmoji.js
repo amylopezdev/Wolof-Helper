@@ -35,6 +35,9 @@ export const getEmoji = (category) => {
     if (category === "directions") {
       return "🗺";
     }
+    if (category === "health") {
+      return "🏥";
+    }
     if (category === "travel") {
       return "🚇";
     }
