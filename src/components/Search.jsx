@@ -20,7 +20,7 @@ export const Search = () => {
     );
   });
 
-  const clearButton = <button onClick={()=>{setSearchField("")}}>Clear Search</button>;
+  const clearButton = <button className="clear-button" onClick={()=>{setSearchField("")}}>Clear Search</button>;
 
   return (
     <>
